@@ -17,6 +17,7 @@ public class Demo {
 //            for (Map.Entry<String, List> stringListEntry : Result.entrySet()) {
 //                System.out.println(stringListEntry.getKey()+"="+stringListEntry.getValue());
 //            }
+            //last statement verified
             HashMap<String, Integer> Result = em.getAvgAlterByBundesland();
 
             for (Map.Entry<String, Integer> e : Result.entrySet()) {
