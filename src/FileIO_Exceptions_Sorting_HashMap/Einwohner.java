@@ -52,6 +52,10 @@ public class Einwohner implements Comparable<Einwohner> {
 
     @Override
     public int compareTo(Einwohner o) {
-        return o.getName().compareTo(this.Name);
+        int cmp =this.Name.compareTo(o.getName());
+        if (o.getName().equals(this.Name)) {
+            cmp = Integer.compare(this.id,o.getId());
+        }
+        return cmp;
     }
 }
